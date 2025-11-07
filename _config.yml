@@ -1,0 +1,19 @@
+collections:
+  workshops:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "workshops"
+    values:
+      layout: "workshop"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"

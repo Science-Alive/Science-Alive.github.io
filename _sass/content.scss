@@ -1,0 +1,96 @@
+// --- Standard Content Styling for Notes ---
+.post-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+  }
+
+  h1, h2, h3, h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  // Emphasis for steps/warnings
+  strong {
+    color: color.adjust($color-text, $lightness:10%);
+    font-weight: 700;
+  }
+}
+
+// Ordered Lists for Steps
+ol {
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  li::marker {
+    font-weight: bold;
+    color: $color-primary;
+  }
+}
+
+// Unordered Lists (e.g., Materials)
+ul {
+  list-style: disc;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  li::marker {
+    font-weight: bold;
+    color: $color-primary;
+  }
+
+}
+
+// Inline Code
+code {
+  background-color: #e9ecef; // Light gray background
+  border-radius: 3px;
+  padding: 2px 5px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  color: #c92c2c; // Red for immediate visibility
+  font-size: 0.9rem;
+}
+
+// Block Code (Fenced Code Blocks in Markdown)
+pre {
+  background-color: #272822; // Dark background (Monokai-style)
+  color: #f8f8f2;             // Light text
+  padding: 1rem;
+  border-radius: 6px;
+  overflow-x: auto; // For long lines of code
+  margin-bottom: 1.5rem;
+
+  code {
+    background: none; // Override inline code background
+    color: inherit;
+    padding: 0;
+    font-size: 0.95rem;
+  }
+}
+
+// Images
+img {
+  max-width: 100%; // Ensures images never overflow the container
+  height: auto;
+  display: block; // Removes extra space below inline images
+  margin: 1.5rem auto; // Center images with margin
+  border: 1px solid $color-border;
+  border-radius: 4px;
+}
+
+// Optional: Blockquotes for Tips/Callouts
+blockquote {
+  border-left: 4px solid $color-secondary; // Science-green bar
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background-color: color.adjust($color-secondary, $lightness:40%); // Light green background
+  font-style: italic;
+  color: color.adjust($color-secondary, $lightness:10%);
+
+  p {
+    margin: 0;
+  }
+}

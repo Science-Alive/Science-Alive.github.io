@@ -1,0 +1,30 @@
+--- 
+layout: default
+--- 
+<div class="workshop-header">
+  <h1>{{ page.name }}</h1>
+  <h2>{{ page.edition }}</h2>
+</div>
+
+<div class="workshop-body">
+  {{ content }}
+</div>
+
+<div class="workshop-notes-section">
+  <h2>Workshop Notes & Steps</h2>
+  <ul class="workshop-notes-list">
+    {% assign filtered_posts = site.posts | where: 'workshop', page.name %}
+    
+    <!-- Filter notes by order -->
+    {% assign sorted_notes = filtered_posts | sort: 'order' %}
+
+    {% for post in sorted_notes %}
+      <li class="note-link-item">
+          <a href="{{ post.url }}" class="note-link">
+              <span class="note-title">{{ post.title }}</span>
+              <span class="note-icon">→</span> 
+          </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

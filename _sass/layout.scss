@@ -1,0 +1,55 @@
+// --- Navigation Bar Styling for _includes/navigation.html ---
+
+.site-nav {
+    border-bottom: 5px solid color.adjust($color-primary, $lightness:10%);
+    margin-bottom: $padding-large;
+}
+
+.nav-wrapper {
+    max-width: 1200px; // A generous width for a wider nav
+    margin: 0 auto;
+    padding: 0 $padding-large; // Left/Right Padding to keep content off the edges
+    
+    // Use flex to align the brand and the links side-by-side
+    display: flex;
+    justify-content: space-between; // Pushes nav to one side, brand to the other
+    align-items: center;
+}
+
+/* --- Brand/Title Styling --- */
+.nav-logo {
+  height: 100px; 
+  width: auto;
+  border: none;
+}
+
+/* --- Link List Styling (The Spacing Fix) --- */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0; // Reset any default margins
+    
+    // **KEY FIX 1: Use Flexbox to lay out the links horizontally**
+    display: flex;
+    align-items: center; 
+}
+
+.nav-links li {
+    // We can remove the list item styling entirely as flex handles the layout
+    display: inline; // Or just leave it as is, but Flexbox is doing the heavy lifting
+}
+
+.nav-link-item {
+    // **KEY FIX 2: Add horizontal padding to the links themselves**
+    padding: $padding-small $padding-large; // Vertical padding (small) and Horizontal padding (large)
+    
+    display: block; // Ensures the padding is respected
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s; 
+
+    &:hover {
+        background-color: color.adjust($color-primary, $lightness:10%); 
+        border-radius: 4px;
+    }
+}

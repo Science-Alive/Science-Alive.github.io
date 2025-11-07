@@ -1,0 +1,14 @@
+--- 
+title: Home
+---
+<h1>Workshops</h1>
+
+<ul class="workshop-list">
+  {% for workshop in site.workshops %}
+    <li class="workshop-item">
+        <h2><a href="{{ workshop.url }}">{{ workshop.name }}</a></h2>
+        <h3>{{ workshop.edition }}</h3>
+        <p>{{ workshop.content | markdownify }}</p>
+    </li>
+  {% endfor %}
+</ul>
