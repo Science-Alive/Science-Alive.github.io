@@ -1,7 +1,7 @@
 // --- Navigation Bar Styling for _includes/navigation.html ---
 
 .site-nav {
-    border-bottom: 5px solid color.adjust($color-primary, $lightness:10%);
+    border-bottom: 5px solid;
     margin-bottom: $padding-large;
 }
 
@@ -49,7 +49,6 @@
     transition: background-color 0.2s; 
 
     &:hover {
-        background-color: color.adjust($color-primary, $lightness:10%); 
         border-radius: 4px;
     }
 }

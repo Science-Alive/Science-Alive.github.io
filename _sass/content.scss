@@ -17,7 +17,6 @@
 
   // Emphasis for steps/warnings
   strong {
-    color: color.adjust($color-text, $lightness:10%);
     font-weight: 700;
   }
 }
@@ -86,9 +85,7 @@ blockquote {
   border-left: 4px solid $color-secondary; // Science-green bar
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
-  background-color: color.adjust($color-secondary, $lightness:40%); // Light green background
   font-style: italic;
-  color: color.adjust($color-secondary, $lightness:10%);
 
   p {
     margin: 0;
