@@ -26,7 +26,7 @@ a:hover {
 }
 
 .site-nav {
-  border-bottom: 5px solid rgb(64.6359223301, 107.6213592233, 192.3640776699);
+  border-bottom: 5px solid;
   margin-bottom: 1.5rem;
 }
 
@@ -67,7 +67,6 @@ a:hover {
   transition: background-color 0.2s;
 }
 .nav-link-item:hover {
-  background-color: rgb(64.6359223301, 107.6213592233, 192.3640776699);
   border-radius: 4px;
 }
 
@@ -165,7 +164,6 @@ a:hover {
   line-height: 1.2;
 }
 .post-content strong {
-  color: rgb(59.5, 59.5, 59.5);
   font-weight: 700;
 }
 
@@ -225,9 +223,7 @@ blockquote {
   border-left: 4px solid #A6192E;
   padding: 1rem 1.5rem;
   margin: 1.5rem 0;
-  background-color: rgb(239.9476439791, 155.0523560209, 167.6963350785);
   font-style: italic;
-  color: rgb(210.3246073298, 31.6753926702, 58.2827225131);
 }
 blockquote p {
   margin: 0;
