@@ -91,3 +91,44 @@ blockquote {
     margin: 0;
   }
 }
+
+// Styling for note navigation
+.pagination {
+    margin-top: $padding-large * 3;
+    padding-top: $padding-large;
+    border-top: 1px solid $color-border;
+    display: flex;
+    justify-content: space-between;
+    
+    & > div {
+        flex: 0 1 48%; // Allows both to take up roughly half the space
+    }
+}
+
+.prev-note-link, .next-note-link {
+    display: block;
+    border: 1px solid $color-border;
+    padding: $padding-large;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s;
+    
+    .label {
+        display: block;
+        font-size: 0.9rem;
+        color: $color-primary;
+        font-weight: bold;
+        margin-bottom: $padding-small * 0.5;
+    }
+
+    .title {
+        display: block;
+        font-size: 1.1rem;
+        color: $color-text;
+    }
+
+    &:hover {
+        background-color: $color-background;
+        border-color: $color-primary;
+    }
+}

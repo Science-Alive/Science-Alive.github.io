@@ -4,9 +4,60 @@ layout: default
 <article class="post-content"> 
   <header>
     <h1>{{ page.title }}</h1>
-    <p>Part of: <a href="/workshops/{{ page.workshop | slugify }}">{{ page.workshop }}</a></p>
+    <p>Part of: <a href="{{ '/workshops/' | append: page.workshop | slugify | append: '/' | relative_url }}">{{ page.workshop }}</a></p>
   </header>
   
   {{ content }}
+
+  <!-- ---------------------------------------------------------------- -->
+  <!-- Logic for Next/Previous Links -->
+  <!-- ---------------------------------------------------------------- -->
+  {% comment %} 
+    1. Filter posts for the current workshop
+    2. Sort them by the custom 'order' variable
+  {% endcomment %}
+  {% assign workshop_notes = site.posts 
+    | where: 'workshop', page.workshop 
+    | sort: 'order' 
+  %}
+
+  {% comment %} 
+    3. Loop to find the current post's position and grab the next/prev 
+  {% endcomment %}
+  {% for note in workshop_notes %}
+    
+    {% if note.url == page.url %}
+      <!-- The note BEFORE the current one (the previous step) -->
+      {% assign prev_note = prev %} 
+      
+      <!-- The note AFTER the current one (the next step) -->
+      {% assign next_note = workshop_notes[forloop.index] %} 
+      
+      {% break %}
+    {% endif %}
+    
+    {% assign prev = note %}
+  {% endfor %}
+
+  <!-- Post Navigation --> 
+  <nav class="pagination">
+    <div>
+      {% if prev_note %}
+        <a href="{{ prev_note.url | relative_url }}" class="prev-note-link">
+          <span class="label">← Previous Step</span>
+          <span class="title">{{ prev_note.title }}</span>
+        </a>
+      {% endif %}
+    </div>
+    
+    <div style="text-align: right;">
+      {% if next_note %}
+        <a href="{{ next_note.url | relative_url }}" class="next-note-link">
+          <span class="label">Next Step →</span>
+          <span class="title">{{ next_note.title }}</span>
+        </a>
+      {% endif %}
+    </div>
+  </nav>
   
 </article>
