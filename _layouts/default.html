@@ -5,6 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{page.title}}</title>
         <link rel="stylesheet" href="/assets/css/styles.css">
+
+        {% assign favicon_path = "/assets/favicons" %}
+
+        <!-- Standard Favicon -->
+        <link rel="icon" type="image/x-icon" href="{{ favicon_path | append: '/favicon.ico' | relative_url }}">
+        
+        <!-- Apple Touch Icon (for iOS home screen) -->
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ favicon_path | append: '/apple-touch-icon.png' | relative_url }}">
+        
+        <!-- Pinned Tab Icon (for Safari) -->
+        <!-- <link rel="mask-icon" href="{{ favicon_path | append: '/safari-pinned-tab.svg' | relative_url }}" color="#5bbad5"> -->
+
+        <!-- Web App Manifest (for Android/Progressive Web Apps) -->
+        <link rel="manifest" href="{{ favicon_path | append: '/site.webmanifest' | relative_url }}">
+        
+        <!-- The classic, required favicon link -->
+        <link rel="icon" href="{{ favicon_path | append: '/favicon.ico' | relative_url }}">
     </head>
     <body>
         {% include navigation.html %}
