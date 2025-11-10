@@ -1,8 +1,11 @@
 // --- Navigation Bar Styling for _includes/navigation.html ---
 
 .site-nav {
-    border-bottom: 5px solid;
-    margin-bottom: $padding-large;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, $color-secondary, $color-primary);
+  border-image-slice: 1;
+
+  margin-bottom: $padding-large;
 }
 
 .nav-wrapper {

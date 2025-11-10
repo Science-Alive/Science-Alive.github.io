@@ -76,8 +76,18 @@ img {
   height: auto;
   display: block; // Removes extra space below inline images
   margin: 1.5rem auto; // Center images with margin
-  border: 1px solid $color-border;
-  border-radius: 4px;
+}
+
+.img-small {
+    // This targets the wrapper around the image
+    max-width: 100px; // Set the maximum display width (e.g., 300px)
+    margin: 1rem auto; // Center the image block
+    
+    img {
+        // Ensure the image inside scales to its container
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 // Optional: Blockquotes for Tips/Callouts

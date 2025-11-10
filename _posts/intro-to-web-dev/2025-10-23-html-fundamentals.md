@@ -2,10 +2,10 @@
 workshop: Intro to Web Development
 author: Danny
 categories: tech
-order: 2
+order: 4
 ---
 
-Welcome to the **Structure** part of web development! Think of HTML as the **skeleton** of your website, it holds the content and semantic structure of what you're trying to conveyto your reader.
+Welcome to the **Structure** part of web development! Think of HTML as the **skeleton** of your website, it holds the content and semantic structure of what you're trying to convey to your reader.
 
 ---
 
