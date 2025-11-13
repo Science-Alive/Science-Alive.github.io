@@ -7,7 +7,7 @@ order: 2
 
 ## Intro to Computer Organization
 
-When we operate and look at computing devices, it might seem that the operate magically, however behind all of the software and programs, it is all folders (or directories) and files. 
+When we operate and look at computing devices, it's easy get lost in all their complexity, however the starting blocks of all software are folders (or directories) and files. 
 
 A **file** is a collection of information and they're organized by specific file types. Different file types will hold specific and different information such as a written message, an image, a video, and even programs. Perhaps you can think of this as notes, homework, papers, and other documents you probably do for school.
 
@@ -42,4 +42,19 @@ Mac uses the Finder, which is not only a file navigator but also launches other 
 [For more info about Finder](https://support.apple.com/en-ca/guide/mac-help/mchlp2605/mac)
 ![diagram of file system](/assets/images/tech/intro-to-web-dev/Big_Sur_Finder_screenshot.png )
 
+### File Paths 
+A file path is a way to specify the location of folders and files. 
 
+A file path for macOS or Linux might look like this:
+**/home/username/Wattson/hello.txt**
+
+In the above example we can see that folders are seperated using the **forward slash ( / )** and the file names end with their type, in this case a text file.
+
+With Windows the file path looks a little different, the same example above might look like this:
+**C:\Users\Wattson\hello.txt**
+
+The biggest differences being that Windows use a letter based drive as well as using the **backward slash ( \\ )** to seperate folder names.
+
+### Practice
+
+Let's put what we learnt to [practice!](https://file-system-game.vercel.app/)

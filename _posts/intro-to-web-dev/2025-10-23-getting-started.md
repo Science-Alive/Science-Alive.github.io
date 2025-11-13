@@ -7,10 +7,10 @@ order: 1
 
 ## Intro to the Web
 
-The internet, at it's simplest form is a network of interconnected computers where can be shared.
+The internet, at it's simplest form, is a network of interconnected computers where information can be shared between computers.
 
-As an example we can think of the internet's connectivity like a social circle. Information is regularly exchanged and people can be reached through other people. In a simillar way, computers connected to the internet can also share information and reach out to other computers through the internet.
- 
+The internet can be a lot like a social circle with lots of friends. Some know each other directly, while others are connected through mutual friends. Friends can send message to others through their close friends or get invitations to an event through the social grapevine.
+
 One of the most important models to describe the interactions between computers on the internet is the client-server model.
 
 ### Client-Server
@@ -30,7 +30,7 @@ Web browsers are software that let us render and interact with web pages. Some p
 Okay, so if we our websites exist on a remote server somewhere, how do we connect our computers to access it?
 
 ### IP Address
-Just as everyone here probably has a physical address, websites also have an address which helps them to be located. IP (Internet Protocol) Addresses are a unique series of numbers seperated by "."s which indentifies a device and it's location. 
+Just as everyone here probably has a physical address, websites also have an address which helps them to be located. IP (Internet Protocol) Addresses are a unique series of numbers separated by "."s which identifies a device and its location. 
 
 If you're curious about a website's IP Address, we can use tools like the site below to see:
 https://www.site24x7.com/tools/find-ip-address-of-web-site.html
@@ -45,7 +45,7 @@ As complex as the internet has become, beneath it all there are 3 technologies t
 - CSS (Cascading Styling Sheets)
 - Javascript (Not to be confused with Java)
 
-As you continue on your programming journey, you'll come to know programmers love accronyms. 
+As you continue on your programming journey, you'll come to know programmers love acronyms. 
 For the purposes of the workshop, we will only be taking a brief look into HTML and CSS. Perhaps we can cover Javascript another time.
 
 
