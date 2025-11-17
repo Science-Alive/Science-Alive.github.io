@@ -102,6 +102,41 @@ blockquote {
   }
 }
 
+table {
+    width: 100%; // Make tables full width of the content area
+    border-collapse: collapse; // Collapses borders for a single line look
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    
+    // Add an overall border for the table container
+    border: 1px solid $color-border; 
+    
+    // Optional: Only show horizontal borders for a cleaner look
+    // border-left: none;
+    // border-right: none;
+}
+
+// Styling for Header and Data Cells
+th, td {
+    padding: 10px 15px; // Generous padding inside cells
+    text-align: center;
+    
+    // Add vertical and horizontal cell dividers
+    border: 1px solid $color-border;
+}
+
+// Styling for the Table Header
+thead {
+    th {
+        // Use a distinct background for the header row
+        background-color: darken($color-background, 5%); // Slightly lighter gray than background
+        color: $color-primary;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+    }
+}
+
 // Styling for note navigation
 .pagination {
   margin-top: $padding-large * 3;

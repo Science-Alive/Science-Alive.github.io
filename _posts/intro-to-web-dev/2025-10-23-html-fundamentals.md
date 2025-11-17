@@ -5,13 +5,15 @@ categories: tech
 order: 4
 ---
 
-Welcome to the **Structure** part of web development! Think of HTML as the **skeleton** of your website, it holds the content and semantic structure of what you're trying to convey to your reader.
+Welcome to the **structure** part of web development! Think of HTML as the **skeleton** of your website, it holds the content and semantic structure of what you're trying to convey to your reader.
 
 ---
 
 ### 1. The Core Concept: HTML is the Bones
 
-HTML (HyperText Markup Language) is the language we use to tell a web browser (like Chrome or Safari) what everything *is*.
+HTML (HyperText Markup Language) is the language we use to tell a web browser (like Chrome, Firefox, or Safari) what everything is.
+
+And HTML does so by using tags.
 
 *   **Is it a main title?** ➡️ Use an `<h1>` tag.
 *   **Is it a normal paragraph?** ➡️ Use a `<p>` tag.
@@ -37,7 +39,7 @@ When you type a website name (like *google.com*), the server automatically looks
 
 #### The Magic Starter Code (The Skeleton)
 
-When you type `!` (and press enter) in VSCode, you get this structure. Don't worry about every line,  just focus on the two main parts:
+When you type `!` or `html:5`(and press enter) in VS Code, you get this structure. Don't worry about every line, just focus on the two main parts:
 
 ```html
 <!DOCTYPE html>
@@ -53,8 +55,8 @@ When you type `!` (and press enter) in VSCode, you get this structure. Don't wor
 </html>
 ```
 
-| Tag Name | What it is | What it does |
-| :---: | :---: | :--- |
+| Tag Name | What it is   | What it does |
+| --- | --- | --- |
 | `<head>` | **The Brain** | Holds all the important **secret** information: the title that shows up in the browser tab, links to CSS files, etc. Nothing in the head is visible on the page. |
 | `<title>` | **The Tab Name** | This is the name that appears in the little tab at the top of your web browser. |
 | `<body>` | **The Body** | **Everything you want to see** on your actual website (text, images, links) goes between the `<body>` and `</body>` tags. |
@@ -64,7 +66,7 @@ When you type `!` (and press enter) in VSCode, you get this structure. Don't wor
 You'll need a few tags to build your first page. Think of these as the main tools in your coding toolbox!
 
 | Tag Name | Description | Example |
-| :---: | :---: | :--- |
+| --- | --- | --- |
 | **`<h1>` to `<h6>`** | **Headlines & Subtitles** | `<h2>Event Details</h2>` |
 | **`<p>`** | **Paragraph** | Used for all the main blocks of text. |
 | **`<ul>` / `<li>`** | **Unordered List / List Item** | Creates bullet points. (`<ol>` creates numbered lists). |
@@ -113,7 +115,7 @@ You need to tell people the **When** and **Where**. Use a sub-title (`<h2>`) and
 
 ### Step 4: Add a Link (The "A" in WWW)
 
-Use an `<a>` tag to create a link for people to "RSVP" (reply).
+Use an `<a>` tag to create a link for people to "RSVP" (reply) or link to other sites.
 
 *   `href`: This is an **attribute** (an extra piece of information) that tells the `<a>` tag *where* to link to.
 *   `target="_blank"`: A handy attribute that tells the browser to open the link in a **new tab**.
@@ -131,6 +133,7 @@ Use an `<a>` tag to create a link for people to "RSVP" (reply).
 A website is boring without pictures! The `<img>` tag is unique because it's a **self-closing tag** (it doesn't need an `</img>`).
 
 *   `src`: The **source**, this is the link to the image you want to display.
+* The link you want to add to your source can be a url link from a different site or it can be from an image that's in the project folder.
 *   `alt`: The **SUPER IMPORTANT** alternative text. If the picture can't load, or if a visually-impaired user is visiting your site, this text tells them what the picture was. **Always include `alt` text!**
 
 ```html
