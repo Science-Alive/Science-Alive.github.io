@@ -3,6 +3,7 @@ name: Intro to Web Development
 fun_name: Tis the Season to Code
 edition: Fall 2025
 curriculum_writer: Danny
+permalink: /workshops/intro-to-web-development/
 ---
 **Stop just using the internet—start building it!**
 

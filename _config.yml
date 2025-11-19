@@ -1,6 +1,7 @@
 collections:
   workshops:
     output: true
+    permalink: /workshop/:name/
 
 defaults:
   - scope:
