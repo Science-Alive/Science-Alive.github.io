@@ -1,5 +1,5 @@
 ---
-workshop: Intro to Web Development
+workshop: Tis' the Season to Code
 author: Danny
 categories: tech
 order: 2
