@@ -7,7 +7,7 @@ title: Home
   {% for workshop in site.workshops %}
     <li class="workshop-item">
         <a href="{{ workshop.url }}">
-            <h2> {{ workshop.name }} </h2>
+            <h2> {{ workshop.workshop }} </h2>
             <h3> {{ workshop.edition }} </h3>
             <p> {{ workshop.content | markdownify }} </p>
         </a>
