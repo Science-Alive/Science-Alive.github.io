@@ -1,8 +1,8 @@
 ---
-workshop: Tis' the Season to Code
+workshop: Tis the Season to Code
 edition: Fall 2025
-curriculum_writer: Danny
-permalink: /workshops/intro-to-web-development/
+author: Danny
+permalink: /workshops/tis-the-season-to-code/
 ---
 **Stop just using the internet: start building it!**
 
