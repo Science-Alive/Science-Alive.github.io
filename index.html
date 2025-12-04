@@ -1,16 +1,28 @@
 --- 
 title: Home
 ---
-<h1>Workshops</h1>
+<section class="home-container">
+  
+    <h1 class="page-title">Workshops</h1>
 
-<ul class="workshop-list">
-  {% for workshop in site.workshops %}
-    <li class="workshop-item">
-        <a href="{{ workshop.url }}">
-            <h2> {{ workshop.workshop }} </h2>
-            <h3> {{ workshop.edition }} </h3>
-            <p> {{ workshop.content | markdownify }} </p>
-        </a>
-    </li>
-  {% endfor %}
-</ul>
+    <ul class="workshop-list">
+        {% for workshop in site.workshops %}
+        <li class="workshop-item">
+            <a href="{{ workshop.url }}">
+                <h3> {{ workshop.edition }} </h3>
+                <h2> {{ workshop.workshop }} </h2>
+                {% if workshop.technologies %}
+
+                <div class="icon-container">
+                    {% for tech in workshop.technologies %}
+                    <!-- 'colored' makes the icons their native color (orange for html, blue for css) -->
+                    <i class="devicon-{{ tech }}-plain colored"></i>
+                    {% endfor %}
+                </div>
+                {% endif %}          <h4> {{ workshop.tagline}} </h4>
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</section>

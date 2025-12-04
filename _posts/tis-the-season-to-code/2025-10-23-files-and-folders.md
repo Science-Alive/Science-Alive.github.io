@@ -7,13 +7,13 @@ order: 2
 
 ## Intro to Computer Organization
 
-When we operate and look at computing devices, it's easy get lost in all their complexity, however the starting blocks of all software are folders (or directories) and files. 
+When we operate and look at computing devices, it's easy get lost in all their complexity, however the starting blocks of all software are **folders** (or **directories**) and **files**. 
 
 A **file** is a collection of information and they're organized by specific file types. Different file types will hold specific and different information such as a written message, an image, a video, and even programs. Perhaps you can think of this as notes, homework, papers, and other documents you probably do for school.
 
-A **folder** is how files are given further organization. Folders can store files, but also other folders to group together similar files. In a computer system this might be placing all of your photos in one specific folder, but even that can cluttered so maybe you want to group together all the vacation photos into a seperate folder. You can think of this like organizing your school work by different subjects, like math and english, and if you're really organized, seperating by different topics within the subject.
+A **folder** is how files are given further organization. Folders can store files, but also other folders to group together similar files. In a computer system this might be placing all of your photos in one specific folder, but even that can cluttered so maybe you want to group together all the vacation photos into a separate folder. You can think of this like organizing your school work by different subjects, like math and English, and if you're really organized, separating by different topics within the subject.
 
-All computing devices will have files and folders. The file navigation will be slightly different depending on the operating system of the the computer. 
+All computing devices will have files and folders. The file navigation will be slightly different depending on the operating system of the computer. 
 
 ![diagram of file system](/assets/images/tech/intro-to-web-dev/file-system-diagram.png)
 In the above image you can see a folder that contains 2 different types of files as well as another folder.
@@ -48,12 +48,12 @@ A file path is a way to specify the location of folders and files.
 A file path for macOS or Linux might look like this:
 **/home/username/Wattson/hello.txt**
 
-In the above example we can see that folders are seperated using the **forward slash ( / )** and the file names end with their type, in this case a text file.
+In the above example we can see that folders are separated using the **forward slash ( / )** and the file names end with their type, in this case a text file.
 
 With Windows the file path looks a little different, the same example above might look like this:
 **C:\Users\Wattson\hello.txt**
 
-The biggest differences being that Windows use a letter based drive as well as using the **backward slash ( \\ )** to seperate folder names.
+The biggest differences being that Windows use a letter based drive as well as using the **backward slash ( \\ )** to separate folder names.
 
 ### Practice
 

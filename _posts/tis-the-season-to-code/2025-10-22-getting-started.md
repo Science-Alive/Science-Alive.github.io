@@ -35,9 +35,9 @@ Just as everyone here probably has a physical address, websites also have an add
 If you're curious about a website's IP Address, we can use tools like the site below to see:
 https://www.site24x7.com/tools/find-ip-address-of-web-site.html
 
-However, I'm sure most of us don't navigate the web using IP addresses, that would be very impressive if you do. Instead of typing in 142.250.217.78 into the browser's search bar, we would put www.google.com. This is what we call a domain name. Domain names and IP Addresses are connected using **DNS (Domain Name System)**, and this is what allows our web navigation as we know it.
+However, we don't navigate the web using IP addresses. Instead of typing in 142.250.217.78 into the browser's search bar, we would put www.google.com. This is what we call a domain name. Domain names and IP Addresses are connected using **DNS (Domain Name System)**, and this is what allows our web navigation as we know it.
 
-A domain name is something can be purchased and there are multiple sites to do so. If you have a website name that you'd like to reserve, you can go to a site like  [https://www.namecheap.com/](namecheap) and see how much that would cost.
+A domain name is something can be purchased and there are multiple sites to do so. If you have a website name that you'd like to reserve, you can go to a site like [namecheap](https://www.namecheap.com/) to see how much that would cost.
 
 ### Technologies that run the Web
 As complex as the internet has become, beneath it all there are 3 technologies that are the pillars of the digital landscape.
